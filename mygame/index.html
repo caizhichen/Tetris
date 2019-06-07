@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>俄罗斯方块</title>
+</head>
+<body>
+    <p>规则：清除1个格子会获得1分</p>
+    <p>方向键</p>
+    <p><span>左：方块左移</span></p>
+    <p><span>上：方块变形</span></p>
+    <p><span>右：方块右移</span></p>
+    <p><span>下（按压）：方块加速下落</span></p>
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <button id="open">游戏开始</button>
+    <button id="timeout" disabled="true">游戏暂停/继续</button>
+    <button disabled="true" id="again">重新开始</button><br>
+    <p>游戏得分：<span class="score">0</span></p>
+    <p style="color:red;">存在问题：方块变形检测并不完善</p>
+<script src="js/game.js"></script>
+</body>
+</html>
